@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Certificate</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <div class="logo-text">
+                <h1>FYC</h1>
+                <span>Find Your Certificate</span>
+            </div>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Courses</a>
+            <a href="#">Contact</a>
+            <button class="login-btn">Login</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <h2>Discover Free Online <br> Certificate Courses.</h2>
+        <p>Unlock your potential with our curated list of free certificate courses.<br> 
+           Start learning new skills and enhance your career opportunities today!</p>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search">
+            <button onclick="searchCourses()">Search</button>
+        </div>
+    </main>
+    
+    <!-- Courses Section -->
+    <section id="courses" style="display:none;">
+        <h2>Explore Free Online Certificate Courses</h2>
+        <div class="certificate-slider">
+            <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+            <div class="slider-container">
+                <!-- Your certificate content here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="display:none;">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us for more information or assistance.</p>
+        <p>Email us at: findyourcertificatefyc@gmail.com</p>
+    </section>
+    
+
+    <!-- Footer Section with Gmail -->
+    <footer>
+        <p>For any queries, contact us at: <strong>findyourcertificatefyc@gmail.com</strong></p>
+    </footer>
+
+
+    <!-- Certificate Slider Section -->
+   <section id="certificates">
+    <h2>Explore Free Online Certificate Courses</h2>
+    <div class="certificate-slider">
+        <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+        <div class="slider-container">
+</section>
+
+
+    
+<!-- Great Learning Free Courses Section -->
+<section class="white-bg" id="greatlearning">
+    <h2>Great Learning Free Courses</h2>
+    <p>Explore a variety of free courses offered by Great Learning to enhance your skills and career opportunities.</p>
+    <div class="course-grid">
+        <a href="https://www.mygreatlearning.com/ai/free-courses" target="_blank" class="course-card">Artificial Intelligence</a>
+        <a href="https://www.mygreatlearning.com/data-science/free-courses" target="_blank" class="course-card">Data Science</a>
+        <a href="https://www.mygreatlearning.com/machine-learning/free-courses" target="_blank" class="course-card">Machine Learning</a>
+        <a href="https://www.mygreatlearning.com/cloud-computing/free-courses" target="_blank" class="course-card">Cloud Computing</a>
+    </div>
+</section>
+
+<!-- Coursera Free Courses Section -->
+<section class="white-bg" id="coursera">
+    <h2>Coursera Free Courses</h2>
+    <p>Explore free courses from Coursera to build your knowledge and skills in various domains.</p>
+    <div class="course-grid">
+        <a href="https://www.coursera.org/learn/google-it-support" target="_blank" class="course-card">Google IT Support</a>
+        <a href="https://www.coursera.org/learn/machine-learning" target="_blank" class="course-card">Machine Learning</a>
+        <a href="https://www.coursera.org/learn/python-for-data-science-ai-development" target="_blank" class="course-card">Python for Data Science</a>
+        <a href="https://www.coursera.org/learn/digital-marketing" target="_blank" class="course-card">Digital Marketing</a>
+    </div>
+</section>
+
+<!-- Simplilearn | SkillUp Free Courses Section -->
+<section class="white-bg" id="simplilearn">
+    <h2>Simplilearn | SkillUp Free Courses</h2>
+    <p>Get access to high-quality free courses from Simplilearn and SkillUp.</p>
+    <div class="course-grid">
+        <a href="https://www.simplilearn.com/free-online-course-data-science-with-python-skillup" target="_blank" class="course-card">Data Science with Python</a>
+        <a href="https://www.simplilearn.com/free-online-course-ai-for-beginners-skillup" target="_blank" class="course-card">AI for Beginners</a>
+        <a href="https://www.simplilearn.com/free-online-course-ethical-hacking-for-beginners-skillup" target="_blank" class="course-card">Ethical Hacking</a>
+        <a href="https://www.simplilearn.com/free-online-course-digital-marketing-for-beginners-skillup" target="_blank" class="course-card">Digital Marketing for Beginners</a>
+    </div>
+</section>
+
+    
+<!-- Class Central Free Courses Section -->
+<section class="white-bg" id="classcentral">
+    <h2>Class Central Free Courses</h2>
+    <p>Explore top free online courses from leading universities and platforms, curated by Class Central.</p>
+    <!-- Course Cards -->
+    <div class="course-grid">
+        <a href="https://www.classcentral.com/course/python-for-everybody-3485" target="_blank" class="course-card">Python for Everybody</a>
+        <a href="https://www.classcentral.com/course/cs50s-introduction-to-computer-science-16096" target="_blank" class="course-card">CS50's Introduction to Computer Science</a>
+        <a href="https://www.classcentral.com/course/machine-learning-387" target="_blank" class="course-card">Machine Learning by Stanford</a>
+        <a href="https://www.classcentral.com/course/learning-how-to-learn-4383" target="_blank" class="course-card">Learning How to Learn</a>
+        <a href="https://www.classcentral.com/course/html-css-javascript-for-web-developers-2676" target="_blank" class="course-card">HTML, CSS, JavaScript for Web Developers</a>
+        <a href="https://www.classcentral.com/course/introduction-to-cyber-security-9725" target="_blank" class="course-card">Introduction to Cyber Security</a>
+        <a href="https://www.classcentral.com/course/ai-for-everyone-17592" target="_blank" class="course-card">AI for Everyone</a>
+        <a href="https://www.classcentral.com/course/digital-marketing-specialization-21692" target="_blank" class="course-card">Digital Marketing Specialization</a>
+    </div>
+</section>
+
+<!-- Swayam Free Courses Section -->
+<section class="white-bg" id="swayam">
+    <h2>Swayam Free Courses</h2>
+    <p>Access free courses from Swayam, an initiative by the Government of India to promote online learning.</p>
+    <div class="course-grid">
+        <a href="https://swayam.gov.in/explorer?category=Computer%20Science%20and%20Engineering" target="_blank" class="course-card">Computer Science</a>
+        <a href="https://swayam.gov.in/explorer?category=Data%20Science" target="_blank" class="course-card">Data Science</a>
+        <a href="https://swayam.gov.in/explorer?category=Artificial%20Intelligence" target="_blank" class="course-card">Artificial Intelligence</a>
+        <a href="https://swayam.gov.in/explorer?category=Management%20Studies" target="_blank" class="course-card">Management Studies</a>
+    </div>
+</section>
+
+<!-- Harvard University Free Courses Section -->
+<section class="white-bg" id="harvard">
+    <h2>Harvard University Free Courses</h2>
+    <p>Access free courses from Harvard University and learn from one of the world's top institutions.</p>
+    <div class="course-grid">
+        <a href="https://cs50.harvard.edu/" target="_blank" class="course-card">CS50: Introduction to Computer Science</a>
+        <a href="https://pll.harvard.edu/course/data-science-r-basics" target="_blank" class="course-card">Data Science: R Basics</a>
+        <a href="https://pll.harvard.edu/course/web-programming-python-and-javascript" target="_blank" class="course-card">Web Programming with Python & JavaScript</a>
+        <a href="https://pll.harvard.edu/course/contract-law" target="_blank" class="course-card">Contract Law</a>
+        <a href="https://pll.harvard.edu/course/introduction-artificial-intelligence-ai" target="_blank" class="course-card">Introduction to Artificial Intelligence</a>
+        <a href="https://pll.harvard.edu/course/leadership-principles" target="_blank" class="course-card">Leadership Principles</a>
+    </div>
+</section>
+
+<!-- Stanford Free Courses Section -->
+<section class="white-bg" id="stanford">
+    <h2>Stanford Free Courses</h2>
+    <p>Explore free online courses offered by Stanford University to expand your knowledge and skills.</p>
+    <div class="course-grid">
+        <a href="https://online.stanford.edu/courses/soe-y0001-introduction-artificial-intelligence" target="_blank" class="course-card">Introduction to Artificial Intelligence</a>
+        <a href="https://online.stanford.edu/courses/cs229-machine-learning" target="_blank" class="course-card">Machine Learning</a>
+        <a href="https://online.stanford.edu/courses/cs234-reinforcement-learning" target="_blank" class="course-card">Reinforcement Learning</a>
+        <a href="https://online.stanford.edu/courses/sohs-ymcsa-your-medical-career-starts-here" target="_blank" class="course-card">Medical Career Foundations</a>
+        <a href="https://online.stanford.edu/courses/cs246-mining-massive-datasets" target="_blank" class="course-card">Mining Massive Datasets</a>
+        <a href="https://online.stanford.edu/courses/cs50-introduction-computer-science" target="_blank" class="course-card">Introduction to Computer Science</a>
+    </div>
+</section>
+<script>
+    // Function to detect scroll and change background color
+    window.addEventListener('scroll', function() {
+        // Check if the page is scrolled beyond a certain point (e.g., 100px)
+        if (window.scrollY > 100) {
+            document.body.classList.add('scrolled'); // Add 'scrolled' class
+        } else {
+            document.body.classList.remove('scrolled'); // Remove 'scrolled' class
+        }
+    });
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
